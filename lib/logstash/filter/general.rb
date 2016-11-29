@@ -42,6 +42,7 @@ class LogStash::Filters::General < LogStash::Filters::Base
       @logger.debug? && @logger.debug("Message is now: #{event.get("message")}")
     end
 
+
     # filter_matched should go in the last line of our successful code
     filter_matched(event)
   end # def filter
